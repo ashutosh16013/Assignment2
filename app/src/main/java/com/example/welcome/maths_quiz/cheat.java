@@ -18,7 +18,7 @@ public class cheat extends AppCompatActivity {
         for(int i=1;i<k;i++){
 
             if(k%i==0){
-                factor=k;
+                factor=i;
                 break;
             }
         }
@@ -26,8 +26,8 @@ public class cheat extends AppCompatActivity {
         cheat.setText("Number has no factors so it is prime");
     else
         {
-            String p1 = String.valueOf(k);
-            cheat.setText("One of the factors is"+p1+"So it cannot be prime");
+            String p1 = String.valueOf(factor);
+            cheat.setText("One of the factors is "+p1+" So it cannot be prime");
         }
     }
     protected void onDestroy(){
