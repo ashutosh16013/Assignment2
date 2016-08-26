@@ -30,4 +30,10 @@ public class cheat extends AppCompatActivity {
             cheat.setText("One of the factors is"+p1+"So it cannot be prime");
         }
     }
+    protected void onDestroy(){
+
+        super.onDestroy();
+        Toast.makeText(getApplicationContext(), "You Cheated so no marks", Toast.LENGTH_SHORT).show();
+
+    }
 }
